@@ -1,2 +1,3 @@
-# bidirectional-mr-sleepduration-mdd
-Reproducibility code and supplementary materials for bidirectional Mendelian randomization analyses of sleep duration and major depressive disorder.
+# Bidirectional Mendelian Randomization of Sleep Duration and Major Depressive Disorder
+
+This repository contains the data and executable code required to reproduce the main Mendelian randomization estimates, sensitivity analyses, diagnostic statistics, and figures reported in the manuscript and supplementary materials.
