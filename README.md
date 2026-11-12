@@ -48,22 +48,22 @@ Automated numerical comparisons cover ST8–ST12; ST6–ST7 provide the input-da
 
 ## Analyses
 
-| analysis | type | exposure → outcome | instruments (included / candidates) | seed |
-|---|---|---|---|---|
-| short_to_MDD | main | short sleep → MDD | 26 / 26 | 20261102 |
-| long_to_MDD | main | long sleep → MDD | 7 / 7 | 20261103 |
-| MDD_to_short | main | MDD → short sleep | 170 / 184 | 20261501 |
-| MDD_to_long | main | MDD → long sleep | 168 / 184 | 20261502 |
-| short_to_lefthand | negative control | short sleep → left-handedness | 26 / 26 | 20261121 |
-| short_to_blond | negative control | short sleep → blond hair | 25 / 26 | 20261122 |
-| long_to_lefthand | negative control | long sleep → left-handedness | 7 / 7 | 20261123 |
-| long_to_blond | negative control | long sleep → blond hair | 6 / 7 | 20261124 |
-| MDD_to_lefthand_set_short | negative control | MDD → left-handedness (MDD→short IV set) | 170 / 170 | 20261125 |
-| MDD_to_blond_set_short | negative control | MDD → blond hair (MDD→short IV set) | 167 / 170 | 20261126 |
-| MDD_to_lefthand_set_long | negative control | MDD → left-handedness (MDD→long IV set) | 168 / 168 | 20261127 |
-| MDD_to_blond_set_long | negative control | MDD → blond hair (MDD→long IV set) | 165 / 168 | 20261128 |
-| LMO_short_to_MDD | leave-many-out | short sleep → MDD | 14 / 26 | 20261301 |
-| LMO_MDD_to_long | leave-many-out | MDD → long sleep | 143 / 168 | 20261304 |
+| analysis | type | exposure → outcome | instruments |
+|---|---|---|---|
+| short_to_MDD | main | short sleep → MDD | 26 / 26 |
+| long_to_MDD | main | long sleep → MDD | 7 / 7 |
+| MDD_to_short | main | MDD → short sleep | 170 / 184 |
+| MDD_to_long | main | MDD → long sleep | 168 / 184 |
+| short_to_lefthand | negative control | short sleep → left-handedness | 26 / 26 |
+| short_to_blond | negative control | short sleep → blond hair | 25 / 26 |
+| long_to_lefthand | negative control | long sleep → left-handedness | 7 / 7 |
+| long_to_blond | negative control | long sleep → blond hair | 6 / 7 |
+| MDD_to_lefthand_set_short | negative control | MDD → left-handedness (MDD→short IV set) | 170 / 170 |
+| MDD_to_blond_set_short | negative control | MDD → blond hair (MDD→short IV set) | 167 / 170 |
+| MDD_to_lefthand_set_long | negative control | MDD → left-handedness (MDD→long IV set) | 168 / 168 |
+| MDD_to_blond_set_long | negative control | MDD → blond hair (MDD→long IV set) | 165 / 168 |
+| LMO_short_to_MDD | leave-many-out | short sleep → MDD | 14 / 26 |
+| LMO_MDD_to_long | leave-many-out | MDD → long sleep | 143 / 168 |
 
 Candidates are the harmonised, LD-clumped instruments before Steiger filtering (main) or the main-analysis
 instrument set (negative controls). Rows with `included_in_MR = TRUE` are exactly the instruments analysed and
