@@ -13,11 +13,19 @@ Mendelian randomization (MR) analysis and code that reproduces, from those datas
 
 and verifies them automatically against the printed supplementary tables (ST8, ST9 and ST11 at full precision;
 ST12, which is printed rounded, at its printed precision).
-Table numbers refer to the manuscript's supplementary tables. The comparison values extracted from
+Table numbers refer to the manuscript's Supplementary Tables 6–12 (ST6–ST12). The comparison values extracted from
 those tables are included in `data/published_values/published_values.tsv`; the workbook itself is
 not required for this workflow. Reproduction starts from the supplied harmonized SNP-level data.
 Raw-GWAS extraction, LD clumping, proxy selection and harmonization are not rerun here.
 Additional sensitivity analyses in the manuscript are outside this executable scope.
+
+## Supplementary table scope
+
+This package uses Supplementary Tables 6–12 (ST6–ST12): ST6–ST7 document the
+SNP-level instruments supplied as harmonized inputs; ST8 reports instrument strength;
+ST9 reports primary MR results; ST10 lists leave-many-out exclusions; ST11 reports
+leave-many-out MR results; and ST12 reports negative-control MR results.
+Automated numerical comparisons cover ST8–ST12; ST6–ST7 provide the input-data context.
 
 ## Included files
 
@@ -40,26 +48,26 @@ Additional sensitivity analyses in the manuscript are outside this executable sc
 
 ## Analyses
 
-| analysis | type | exposure → outcome | instruments |
-|---|---|---|---|
-| short_to_MDD | main | short sleep → MDD | 26 |
-| long_to_MDD | main | long sleep → MDD | 7 |
-| MDD_to_short | main | MDD → short sleep | 170 |
-| MDD_to_long | main | MDD → long sleep | 168 |
-| short_to_lefthand | negative control | short sleep → left-handedness | 26 |
-| short_to_blond | negative control | short sleep → blond hair | 25 |
-| long_to_lefthand | negative control | long sleep → left-handedness | 7 |
-| long_to_blond | negative control | long sleep → blond hair | 6 |
-| MDD_to_lefthand_set_short | negative control | MDD → left-handedness (MDD→short IV set) | 170 |
-| MDD_to_blond_set_short | negative control | MDD → blond hair (MDD→short IV set) | 167 |
-| MDD_to_lefthand_set_long | negative control | MDD → left-handedness (MDD→long IV set) | 168 |
-| MDD_to_blond_set_long | negative control | MDD → blond hair (MDD→long IV set) | 165 |
-| LMO_short_to_MDD | leave-many-out | short sleep → MDD | 14 |
-| LMO_MDD_to_long | leave-many-out | MDD → long sleep | 143 |
+| analysis | type | exposure → outcome | instruments (included / candidates) | seed |
+|---|---|---|---|---|
+| short_to_MDD | main | short sleep → MDD | 26 / 26 | 20261102 |
+| long_to_MDD | main | long sleep → MDD | 7 / 7 | 20261103 |
+| MDD_to_short | main | MDD → short sleep | 170 / 184 | 20261501 |
+| MDD_to_long | main | MDD → long sleep | 168 / 184 | 20261502 |
+| short_to_lefthand | negative control | short sleep → left-handedness | 26 / 26 | 20261121 |
+| short_to_blond | negative control | short sleep → blond hair | 25 / 26 | 20261122 |
+| long_to_lefthand | negative control | long sleep → left-handedness | 7 / 7 | 20261123 |
+| long_to_blond | negative control | long sleep → blond hair | 6 / 7 | 20261124 |
+| MDD_to_lefthand_set_short | negative control | MDD → left-handedness (MDD→short IV set) | 170 / 170 | 20261125 |
+| MDD_to_blond_set_short | negative control | MDD → blond hair (MDD→short IV set) | 167 / 170 | 20261126 |
+| MDD_to_lefthand_set_long | negative control | MDD → left-handedness (MDD→long IV set) | 168 / 168 | 20261127 |
+| MDD_to_blond_set_long | negative control | MDD → blond hair (MDD→long IV set) | 165 / 168 | 20261128 |
+| LMO_short_to_MDD | leave-many-out | short sleep → MDD | 14 / 26 | 20261301 |
+| LMO_MDD_to_long | leave-many-out | MDD → long sleep | 143 / 168 | 20261304 |
 
-Instrument counts indicate the SNPs included in each analysis. Primary and negative-control analyses
-use rows with `included_in_MR = TRUE`; leave-many-out analyses additionally exclude rows with
-`LMO_excluded = TRUE`. Candidate counts and random seeds are available in `data/manifest.tsv`.
+Candidates are the harmonised, LD-clumped instruments before Steiger filtering (main) or the main-analysis
+instrument set (negative controls). Rows with `included_in_MR = TRUE` are exactly the instruments analysed and
+printed in Supplementary Tables 6–7.
 Leave-many-out analyses use the main harmonized file (`short_to_MDD.tsv`, `MDD_to_long.tsv`) excluding rows with
 `LMO_excluded = TRUE`, i.e. instruments associated at P ≤ 5 × 10⁻⁸ with any candidate predictor in
 `data/leave_many_out/predictor_lookup_all_pairs.tsv` (OpenGWAS look-ups; 18 predictors for short sleep → MDD, 9 for
@@ -162,6 +170,6 @@ and ST10 excluded associations. Consult the generated comparison reports to asse
 
 ## Data sources and reuse
 
-GWAS sources and sample definitions are described in the manuscript's Supplementary Table 1.
+GWAS sources and sample definitions are described in the manuscript and its supplementary materials.
 The inputs here are SNP-level summary data, not participant-level records. Consult the original GWAS
 providers for data-use and redistribution terms; a repository code license does not override those terms.
