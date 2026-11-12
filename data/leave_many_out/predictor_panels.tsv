@@ -1,0 +1,28 @@
+panel	predictor_name	id	source	year	N	ancestry	direction
+sleep_to_MDD	Smoking initiation	ieu-b-4877	GSCAN	2019	607,291	European	short_to_MDD
+sleep_to_MDD	Alcohol intake frequency	ukb-b-5779	MRC-IEU (UK Biobank)	2018	462,346	European	short_to_MDD
+sleep_to_MDD	Physical activity (moderate)	ukb-b-2346	MRC-IEU (UK Biobank)	2018	343,827	European	short_to_MDD
+sleep_to_MDD	Physical activity (vigorous)	ukb-b-13932	MRC-IEU (UK Biobank)	2018	251,501	European	short_to_MDD
+sleep_to_MDD	Body mass index	ieu-b-40	GIANT	2018	681,275	European	short_to_MDD
+sleep_to_MDD	Household income	ukb-b-7408	MRC-IEU (UK Biobank)	2018	397,751	European	short_to_MDD
+sleep_to_MDD	Educational attainment	ieu-a-1239	SSGAC	2018	766,345	European	short_to_MDD
+sleep_to_MDD	Ischaemic stroke	ebi-a-GCST90018864	GWAS Catalog	2021	484,121	European	short_to_MDD
+sleep_to_MDD	Type 2 diabetes	ebi-a-GCST90018926	GWAS Catalog	2021	490,089	European	short_to_MDD
+sleep_to_MDD	Neuroticism	ukb-b-4630	MRC-IEU (UK Biobank)	2018	374,323	European	short_to_MDD
+sleep_to_MDD	Insomnia	ukb-b-3957	MRC-IEU (UK Biobank)	2018	462,341	European	short_to_MDD
+sleep_to_MDD	Loneliness / isolation	ukb-b-8476	MRC-IEU (UK Biobank)	2018	455,364	European	short_to_MDD
+sleep_to_MDD	Cannabis use	ukb-d-20455_irnt	Neale lab (UK Biobank)	2018	25,698	European	short_to_MDD
+sleep_to_MDD	Anxiety / panic attacks	ebi-a-GCST90038651	GWAS Catalog	2021	484,598	European	short_to_MDD
+sleep_to_MDD	ADHD	ieu-a-1183	PGC	2017	55,374	European	short_to_MDD
+sleep_to_MDD	Bipolar disorder	ieu-b-5110	PGC	2021	413,466	European	short_to_MDD
+sleep_to_MDD	Schizophrenia	ieu-b-5102	PGC	2022	127,906	European	short_to_MDD
+sleep_to_MDD	Autism spectrum disorder	ieu-a-1185	iPSYCH-PGC	2017	46,351	European	short_to_MDD
+MDD_to_sleep	Smoking initiation	ieu-b-4877	GSCAN	2019	607,291	European	MDD_to_long
+MDD_to_sleep	Alcohol intake frequency	ukb-b-5779	MRC-IEU (UK Biobank)	2018	462,346	European	MDD_to_long
+MDD_to_sleep	Physical activity (moderate)	ukb-b-2346	MRC-IEU (UK Biobank)	2018	343,827	European	MDD_to_long
+MDD_to_sleep	Physical activity (vigorous)	ukb-b-13932	MRC-IEU (UK Biobank)	2018	251,501	European	MDD_to_long
+MDD_to_sleep	Body mass index	ieu-b-40	GIANT	2018	681,275	European	MDD_to_long
+MDD_to_sleep	Household income	ukb-b-7408	MRC-IEU (UK Biobank)	2018	397,751	European	MDD_to_long
+MDD_to_sleep	Educational attainment	ieu-a-1239	SSGAC	2018	766,345	European	MDD_to_long
+MDD_to_sleep	Ischaemic stroke	ebi-a-GCST90018864	GWAS Catalog	2021	484,121	European	MDD_to_long
+MDD_to_sleep	Type 2 diabetes	ebi-a-GCST90018926	GWAS Catalog	2021	490,089	European	MDD_to_long

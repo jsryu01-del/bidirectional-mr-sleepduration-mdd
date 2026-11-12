@@ -1,0 +1,15 @@
+analysis	analysis_type	exposure	outcome	seed	published_table	IV_set	n_candidates	n_included	file
+short_to_MDD	main	short	MDD	20261102	ST9	short_to_MDD	26	26	data/harmonized/short_to_MDD.tsv
+long_to_MDD	main	long	MDD	20261103	ST9	long_to_MDD	7	7	data/harmonized/long_to_MDD.tsv
+MDD_to_short	main	MDD	short	20261501	ST9	MDD_to_short	184	170	data/harmonized/MDD_to_short.tsv
+MDD_to_long	main	MDD	long	20261502	ST9	MDD_to_long	184	168	data/harmonized/MDD_to_long.tsv
+short_to_lefthand	negative_control	short	lefthand	20261121	ST12	short_to_MDD	26	26	data/harmonized/short_to_lefthand.tsv
+short_to_blond	negative_control	short	blond	20261122	ST12	short_to_MDD	26	25	data/harmonized/short_to_blond.tsv
+long_to_lefthand	negative_control	long	lefthand	20261123	ST12	long_to_MDD	7	7	data/harmonized/long_to_lefthand.tsv
+long_to_blond	negative_control	long	blond	20261124	ST12	long_to_MDD	7	6	data/harmonized/long_to_blond.tsv
+MDD_to_lefthand_set_short	negative_control	MDD	lefthand	20261125	ST12	MDD_to_short	170	170	data/harmonized/MDD_to_lefthand_set_short.tsv
+MDD_to_blond_set_short	negative_control	MDD	blond	20261126	ST12	MDD_to_short	170	167	data/harmonized/MDD_to_blond_set_short.tsv
+MDD_to_lefthand_set_long	negative_control	MDD	lefthand	20261127	ST12	MDD_to_long	168	168	data/harmonized/MDD_to_lefthand_set_long.tsv
+MDD_to_blond_set_long	negative_control	MDD	blond	20261128	ST12	MDD_to_long	168	165	data/harmonized/MDD_to_blond_set_long.tsv
+LMO_short_to_MDD	leave_many_out	short	MDD	20261301	ST11	short_to_MDD	26	14	data/harmonized/short_to_MDD.tsv
+LMO_MDD_to_long	leave_many_out	MDD	long	20261304	ST11	MDD_to_long	168	143	data/harmonized/MDD_to_long.tsv

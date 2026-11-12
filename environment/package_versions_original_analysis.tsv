@@ -1,0 +1,6 @@
+package	version
+R	4.4.2
+data.table	1.15.4
+TwoSampleMR	0.6.15
+MRPRESSO	1.0
+mr.raps	0.4.2
