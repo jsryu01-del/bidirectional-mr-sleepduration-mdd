@@ -17,7 +17,6 @@ Table numbers refer to the manuscript's Supplementary Tables 6–12 (ST6–ST12)
 those tables are included in `data/published_values/published_values.tsv`; the workbook itself is
 not required for this workflow. Reproduction starts from the supplied harmonized SNP-level data.
 Raw-GWAS extraction, LD clumping, proxy selection and harmonization are not rerun here.
-Additional sensitivity analyses in the manuscript are outside this executable scope.
 
 ## Supplementary table scope
 
